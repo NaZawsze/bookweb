@@ -282,7 +282,7 @@
         function pendantMusic(){
             // 创建audio标签
             let audio = document.createElement("audio");
-            audio.src = "music/eye-mouseover.7d883e2b.mp3"
+            //audio.src = "music/eye-mouseover.7d883e2b.mp3"
             audio.autoplay = true;
             // audio的音量
             audio.volume = musicVolume;
@@ -391,7 +391,7 @@
                 //返回射线选中的对象
                 var intersects = raycaster.intersectObjects([pendantMesh]);
                 if (intersects.length > 0) {
-                    window.location = "http://localhost:5500/index2.html"
+                    window.location = "https://story.skybridair.cn:31000"
                 }
         }
         document.body.addEventListener("click",clickEvent)

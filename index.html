@@ -57,14 +57,14 @@
         // 将模型添加到场景
        // scene.add(axes)
 
-        // 创建矩形模型
-        var plane = new THREE.PlaneGeometry(117,72);
+       // 创建矩形模型
+       var plane = new THREE.PlaneGeometry(117,72);
         // 创建基础材质
         var planeMaterial = new THREE.MeshBasicMaterial();
         // 创建纹理对象
         var textureloader = new THREE.TextureLoader();
         // 加载纹理图片
-        var bg = textureloader.load("img/book.webp");
+        var bg = textureloader.load("https://i.imgtg.com/2023/05/14/OMxRBU.webp");
         // 将纹理叠加到材质上
         planeMaterial.map = bg
         // 将材质叠加到模型上
@@ -81,10 +81,10 @@
         // 创建纹理对象
         var pendanttexture = new THREE.TextureLoader();
         // 加载纹理图片
-        var pendanttextureload = pendanttexture.load("img/book.webp");
+        var pendanttextureload = pendanttexture.load("https://i.imgtg.com/2023/05/14/OMxJfp.webp");
         // 将纹理叠加到材质上
         pendantMaterial.map = pendanttextureload;
-        //webp图片透明部分开启
+        //png图片透明部分开启
         pendantMaterial.transparent = true;
         pendantMaterial.opacity = 0;
         // 将材质叠加到模型上
@@ -103,10 +103,10 @@
         // 创建纹理对象
         var pendantLighttexture = new THREE.TextureLoader();
         // 加载纹理图片
-        var pendantLighttextureload = pendantLighttexture.load("img/book2.webp");
+        var pendantLighttextureload = pendantLighttexture.load("https://i.imgtg.com/2023/05/14/OMxJfp.webp");
         // 将纹理叠加到材质上
         pendantLightMaterial.map = pendantLighttextureload;
-        //webp图片透明部分开启
+        //png图片透明部分开启
         pendantLightMaterial.transparent = true;
         // 混合模式设置为叠加
         pendantLightMaterial.blending = THREE.AdditiveBlending;
